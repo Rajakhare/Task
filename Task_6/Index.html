@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Forms Attributes</title>
+</head>
+<body>
+     <fieldset>
+          <legend><h2>Student Registration Form</h2></legend>
+          <form action="">
+               <fieldset>
+                    <legend><strong>Perosnal Information</strong></legend>
+                    <label for="username"><strong>Username: </strong></label>
+                    <input type="text" id="username" required placeholder="Enter Username..."> <br> <br>
+                    
+                    <label for="fullname"><strong>Full Name:</strong></label>
+                    <input type="text" id="fullname" required placeholder="Enter Fullname..."> <br> <br>
+                    
+                    <label for="email"><strong>Email: </strong></label>
+                    <input type="text" id="email" required placeholder="Enter Email..."> <br> <br>
+                    
+                    <label for="password"><strong>Password: </strong></label>
+                    <input type="password" id="password" required placeholder="Enter Password..."> <br> <br>
+                    
+                    <label for="confirm_pass"><strong>Confirm Password: </strong></label>
+                    <input type="password" id="confirm_pass" required placeholder="Enter Confirm Password..."> <br> <br>
+                    
+                    <label for="dob"><strong>Date Of Birth: </strong></label>
+                    <input type="date" id="dob" required> <br> <br>
+                    
+                
+                    <div><strong>Gender: </strong>
+                         <input type="radio" id="male" required name="gender" value="Male">
+                         <label for="male">Male</label> 
+                         
+                         <input type="radio" id="female" required name="gender" value="Female">
+                         <label for="female">Female</label> 
+                         
+                         <input type="radio" id="other" required name="gender" value="Other">
+                         <label for="other">Other</label> 
+                    </div> <br>
+                    
+                    <label for="mobile"><strong>Phone Number: </strong></label>
+                    <input type="number" id="mobile" required name="Mobile" value="number" maxlength="10" placeholder="Enter Mobile Number..."> <br> <br>
+                    
+                    <label for="photo"><strong>Profile Photo: </strong></label>
+                    <input type="file" id="photo" required> <br> <br>
+               </fieldset>
+
+               <fieldset>
+                    <legend><strong>Address</strong></legend>
+                    <div><strong>City: </strong>
+                         <select name="city">
+                              <option value="Bhopal" selected>Bhopal</option>
+                              <option value="hyderbad">Hyderbad</option>
+                              <option value="noida">Noida</option>
+                              <option value="nagpur">Nagpur</option>
+                              <option value="indore">Indore</option>
+                         </select>
+                    </div> <br>
+                    
+                    <div><strong>State: </strong>
+                         <select name="State">
+                              <option value="madhya paradesh" selected>Madhya Pradesh</option>
+                              <option value="Telangana">Telangana</option>
+                              <option value="Delhi">Delhi</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Kolkata">Kolkata</option>
+                         </select>
+                    </div> <br>
+
+                    <div><strong>Country: </strong>
+                         <select name="country">
+                              <option value="india" selected>India</option>
+                              <option value="america">America</option>
+                              <option value="South Africa">South Africa</option>
+                              <option value="China">China</option>
+                              <option value="Russia">Russia</option>
+                         </select>
+                    </div> <br>
+               
+                    <label for=""><strong>Address:</strong></label>
+                    <input type="text" required placeholder="Enter Permanent Address...">
+               </fieldset>
+
+               <fieldset>
+                    <legend><strong>Education & Academics</strong></legend>
+                    
+                    <div><strong>Qualification: </strong>
+                         <select name="qualification" required>
+                              <option value="b.tech" selected>B.Tech</option>
+                              <option value="m.tech">M.Tech</option>
+                              <option value="bsc">Bsc</option>
+                              <option value="b.com">B.com</option>
+                              <option value="mba">MBA</option>
+                         </select>
+                    </div> <br>
+
+                    <div><strong>Skills: </strong>
+                         <select name="Skill" multiple>
+                         <optgroup label="Front-End">
+                              <option value="html">HTML</option>
+                              <option value="css">CSS</option>
+                              <option value="js">JavaScript</option>
+                         </optgroup>
+                         
+                         <optgroup label="Back-End">
+                              <option value="python">Python</option>
+                              <option value="nodejs">NodeJs</option>
+                              <option value="django">Django</option>
+                         </optgroup>
+                         
+                         <optgroup label="Database">
+                              <option value="mysql">MYSQL</option>
+                              <option value="postgresql">PostgreSQL</option>
+                              <option value="mongodb">Mongo DB</option>
+                         </optgroup>
+                         </select>
+                    </div> <br>
+               
+                    <div><strong>Upload Resume: </strong>
+                         <input type="file">
+                    </div> <br>
+               
+                    <div><strong>Social Link: </strong>
+                         <input type="url" placeholder="Enter Linkedin profile...">
+                    </div>
+               </fieldset>
+          </form> <br>
+
+          <input type="checkbox" id="Remember">
+          <label for="Remember">Remember Me</label> <br>
+          <button type="submit">Submit</button> <button type="reset">Reset</button>
+     </fieldset>
+    
+</body>
+</html>
